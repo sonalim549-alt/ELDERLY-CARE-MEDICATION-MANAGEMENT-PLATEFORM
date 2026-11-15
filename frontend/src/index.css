@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Custom Pulsing and Glow utilities for Critical Alerts */
+.glow-critical {
+  box-shadow: 0 0 20px -3px rgba(239, 68, 68, 0.45);
+}
+
+.glow-safe {
+  box-shadow: 0 0 15px -3px rgba(16, 185, 129, 0.35);
+}
+
+.glow-blue {
+  box-shadow: 0 0 20px -3px rgba(14, 165, 233, 0.35);
+}
+
+/* Custom Scrollbar for Clinical Panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Buzurg (Elderly) Mode Theme High Contrast Adjustments */
+.elderly-active {
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.elderly-active button {
+  min-height: 4rem;
+}

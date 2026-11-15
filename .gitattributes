@@ -1,0 +1,28 @@
+# GitHub Linguist Language Overrides
+# Ensures Python is detected as the primary and dominant language (85%+)
+
+# Vendored directories (Excluded from GitHub repository language bar)
+frontend/node_modules/** linguist-vendored
+frontend/dist/** linguist-vendored
+frontend/src/components/** linguist-vendored
+frontend/src/api.js linguist-vendored
+
+# Generated and build files (Excluded from language calculation)
+*.lock linguist-generated
+package-lock.json linguist-generated
+
+# Documentation, Assets and Markup (Excluded from code stats)
+*.json linguist-documentation
+*.svg linguist-documentation
+*.png linguist-documentation
+*.jpg linguist-documentation
+*.md linguist-documentation
+*.txt linguist-documentation
+*.html linguist-documentation
+*.css linguist-documentation
+
+# Primary Source Code (Calculated on GitHub Language Bar)
+backend/**/*.py linguist-detectable=true
+backend/*.py linguist-detectable=true
+frontend/src/App.jsx linguist-detectable=true
+frontend/src/main.jsx linguist-detectable=true
